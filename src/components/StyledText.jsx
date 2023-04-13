@@ -20,12 +20,16 @@ const styles = StyleSheet.create({
   },
   colorSecondary: {
     color: theme.colors.textSecondary
+  },
+  textAlignCenter: {
+    textAlign: 'center'
   }
 })
 
-const StyledText = ({ children, color, fontSize, fontWeight, style, ...restOfProps }) => {
+const StyledText = ({ children, align, color, fontSize, fontWeight, style, ...restOfProps }) => {
   const textStyles = [
     styles.text,
+    align === 'center' && styles.textAlignCenter,
     color === 'primary' && styles.colorPrimary,
     color === 'secondary' && styles.colorSecondary,
     fontSize === 'subHeading' && styles.subHeading,
