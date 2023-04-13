@@ -33,6 +33,9 @@
     "parserOptions": {
       "sourceType": "module"
     },
+    "rules": {
+      "react/prop-types": "off"
+    },
     "extends": [
       "standard",
       "standard-jsx",
