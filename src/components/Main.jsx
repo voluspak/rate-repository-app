@@ -1,9 +1,9 @@
 import React from 'react'
-import SignIn from './SignIn'
 import { View } from 'react-native'
 import RepositoryList from './RepositoryList'
 import AppBar from './AppBar'
 import { Route, Routes } from 'react-router-native'
+import LogInPage from '../pages/LogInPage'
 
 const Main = () => {
   return (
@@ -11,7 +11,7 @@ const Main = () => {
       <AppBar />
       <Routes>
         <Route path='/' Component={RepositoryList} exact />
-        <Route path='/signin' Component={SignIn} exact />
+        <Route path='/signin' Component={LogInPage} exact />
       </Routes>
     </View>
   )
