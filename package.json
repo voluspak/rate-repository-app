@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.12",
-    "apollo-boost": "^0.4.9",
     "expo": "~48.0.10",
     "expo-status-bar": "~1.4.4",
     "formik": "^2.2.9",
